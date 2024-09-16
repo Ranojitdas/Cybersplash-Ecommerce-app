@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - CyberSplash</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div id="logord">
+                <a href="index.html">CyberSplash</a>
+            </div>
+            <nav>
+                <ul class="navrd-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="knowledge.html">Knowledge</a></li>
+                    <li><a href="contribution.html">Contribution</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="ecommerce.html">E-commerce</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li class="dropdownrd">
+                        <a href="#" class="dropbtnrd">Calculator <i class="fa fa-caret-down"></i></a>
+                        <div class="dropdownrd-content">
+                            <a href="water-usage-calculator.html">Water Usage Calculator</a>
+                            <a href="water-footprint-calculator.html">Water Footprint Calculator</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="profile-iconrd">
+                <a href="profile.html"><i class="fa fa-user-circle"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Profile Section -->
+    <main>
+        <section class="profile-section">
+            <div class="container">
+                <h1>Your Profile</h1>
+                <div class="profile-container">
+                    <div class="profile-info">
+                        <h2>Personal Information</h2>
+                        <form id="profile-form">
+                            <div class="form-group">
+                                <label for="full-name">Full Name</label>
+                                <input type="text" id="full-name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" placeholder="john.doe@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" placeholder="+91 9876543210" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" placeholder="********" required>
+                            </div>
+                            <button type="button" onclick="updateProfile()">Update Profile</button>
+                        </form>
+                    </div>
+                    <div class="profile-orders">
+                        <h2>Order History</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                    <th>Total (₹)</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="order-history">
+                                <!-- Order history will be dynamically inserted here -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="profile-addresses">
+                        <h2>Saved Addresses</h2>
+                        <ul id="saved-addresses">
+                            <!-- Saved addresses will be dynamically inserted here -->
+                        </ul>
+                        <button onclick="addAddress()">Add New Address</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <a href="#">Our Story</a>
+                <a href="#">Mission</a>
+                <a href="#">Team</a>
+            </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <a href="#">Contact Us</a>
+                <a href="#">FAQs</a>
+                <a href="#">Shipping & Returns</a>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 CyberSplash. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- JavaScript for Profile Operations -->
+    <script src="profile.js"></script>
+</body>
+</html>

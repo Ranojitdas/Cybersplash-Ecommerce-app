@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water-Efficient Product Marketplace</title>
+    <link rel="stylesheet" href="ecommerce.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER SECTION
+    <header>
+        <div class="header-container">
+            <div id="logo"><a href="#">WaterSaver</a></div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="cart.html"><i class="fa fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> -->
+    <header>
+        <div class="header-container">
+            <!-- Logo and Branding -->
+            <div id="logo">
+                <a href="#">CyberSplash</a>
+            </div>
+
+            <!-- Navigation Bar -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Knowledge</a></li>
+                    <li><a href="#">Contribution</a></li>
+                    <li><a href="https://ranojitdas.github.io/Water-Efficiency-Quiz-app/">Quiz</a></li>
+                    <li><a href="#">E-commerce</a></li>
+                    <li><a href="https://ranojitdas.github.io/Event-list/">Events</a></li>
+
+                    <!-- Dropdown for Calculators -->
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Calculator <i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="https://ranojitdas.github.io/Water-usage-calculator/">Water Usage Calculator</a>
+                            <a href="https://ranojitdas.github.io/Water-footprint-calculator/">Water Footprint Calculator</a>
+                        </div>
+                    </li>
+                    <li><a href="cart.html"><i class="fa fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+
+            <!-- Profile Icon for User Details -->
+            <div class="profile-icon" onclick="fetchUserDetails()">
+                <i class="fa fa-user-circle"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- BANNER SECTION -->
+    <section class="banner">
+        <!-- <img src="#" alt="Water-Saving Products Banner"> -->
+        <div class="banner-text">
+            <h1>Shop Water-Efficient Products</h1>
+            <p>Save water with the latest tools and technologies</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- PRODUCT SECTION -->
+    <section id="products" class="products-section">
+        <h2>Featured Products</h2>
+
+        <!-- Filter and Sort Bar -->
+        <div class="filter-bar">
+            <div class="search-sort-container">
+                <input type="text" id="search-bar" placeholder="Search for products..." oninput="liveSearch()">
+                <select id="category-filter" onchange="filterProducts()">
+                    <option value="all">All Categories</option>
+                    <option value="faucets">Low-Flow Faucets</option>
+                    <option value="irrigation">Smart Irrigation</option>
+                    <option value="recycling">Water Recycling</option>
+                    <option value="gardening">Eco-Friendly Garden Tools</option>
+                </select>
+                <select id="sort-options" onchange="sortProducts()">
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid" id="product-grid">
+            <!-- Products will be dynamically loaded here using JS -->
+        </div>
+
+        <!-- Pagination -->
+        <div id="pagination" class="pagination"></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h3>About Us</h3>
+                <a href="#">Our Mission</a>
+                <a href="#">Sustainability</a>
+                <a href="#">Careers</a>
+            </div>
+            <div class="footer-links">
+                <h3>Customer Service</h3>
+                <a href="#">FAQs</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Shipping & Returns</a>
+            </div>
+            <div class="footer-links">
+                <h3>Stay Connected</h3>
+                <a href="#"><i class="fa fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fa fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fa fa-instagram"></i> Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="ecommerce.js"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+/* Profile Page Styling */
+.profile-section {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-section h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #003399;
+    margin-bottom: 40px;
+}
+
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.profile-info, .profile-orders, .profile-addresses {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow-1);
+}
+
+.profile-info h2, .profile-orders h2, .profile-addresses h2 {
+    font-size: 1.8rem;
+    color: #003399;
+    margin-bottom: 20px;
+}
+
+.profile-info form .form-group {
+    margin-bottom: 20px;
+}
+
+.profile-info form label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.profile-info form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.profile-info form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #005c99;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profile-info form button:hover {
+    background-color: #003366;
+}
+
+.profile-orders table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.profile-orders table th, .profile-orders table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.profile-orders table th {
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.profile-orders table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.view-details-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-details-btn:hover {
+    background-color: #0056b3;
+}
+
+.profile-addresses ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.profile-addresses ul li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.profile-addresses ul li .remove-address-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #ff4c4c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profile-addresses ul li .remove-address-btn:hover {
+    background-color: #d93b3b;
+}
+
+.profile-addresses button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.profile-addresses button:hover {
+    background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .profile-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .profile-section {
+        padding: 40px 10px;
+    }
+
+    .profile-info, .profile-orders, .profile-addresses {
+        padding: 15px;
+    }
+
+    .profile-orders table th, .profile-orders table td {
+        padding: 10px 8px;
+        font-size: 0.9rem;
+    }
+
+    .view-details-btn, .remove-address-btn {
+        padding: 4px 8px;
+        font-size: 0.9rem;
+    }
+
+    .profile-addresses button {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}
